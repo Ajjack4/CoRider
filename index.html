@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpg" href="./images/trip.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="CoRider Message App To Fetch Messages" />
+    <link rel ="apple-touch-icon" href="./images/trip.jpg"/>
+    <link rel="manifest" href="./manifest.json" />
+    <title>CoRider</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      console.log('Attempting to register ServiceWorker...');
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('serviceWorker.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+      else{
+          console.log('serviceWorker not in navigator');
+          console.log(navigator);
+      }
+      </script>
+  </body>
+</html>

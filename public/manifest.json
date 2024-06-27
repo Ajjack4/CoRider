@@ -1,0 +1,16 @@
+{
+    "short_name": "CoRider",
+    "name": "Creat CoRider",
+    "icons": [
+      {
+        "src": "/images/trip.jpg",
+        "sizes": "200x200",
+        "type": "image/jpg"
+      }
+      
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
