@@ -114,7 +114,10 @@
   
 @media (max-width:410px){
     .edit{
-        padding-left:180px;
+        height: 15px;
+        width:15px;
+        padding-left:160px;
     }
+    
 }
   

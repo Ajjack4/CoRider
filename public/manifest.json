@@ -2,14 +2,40 @@
     "short_name": "CoRider",
     "name": "Creat CoRider",
     "icons": [
-      {
-        "src": "/images/trip.jpg",
-        "sizes": "200x200",
-        "type": "image/jpg"
-      }
       
+        
+          {
+            "src": "logo192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+          },
+          {
+            "src": "logo256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+          },
+          {
+            "src": "logo384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+          },
+          {
+            "src": "logo512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+          }
     ],
-    "start_url": ".",
+    "screenshots": [
+    {
+     "src": "/images/route.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Wonder Widgets"
+      }
+    ],
+    "start_url": "",
+    "scope":"/",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"
