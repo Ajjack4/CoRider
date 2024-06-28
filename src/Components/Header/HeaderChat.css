@@ -12,8 +12,8 @@
    
     margin-bottom: 1px;
     
-    border-bottom: 1px solid #E5E5E0
-    
+    border-bottom: 1px solid #E5E5E0;
+   
     
 
 }
@@ -89,15 +89,7 @@ opacity: 0px;
 }
 
 .dots{
-    width: 24px;
-    height: 24px;
-    padding-left: 150px;
-    gap: 0px;
-    opacity: 0px;
-    object-fit: cover;
-    transition: 0.2s;
-    cursor: pointer;
-    
+  display: none;
 }
 .dots:hover{
     opacity: 1;
@@ -169,7 +161,7 @@ opacity: 0px;
     .edit{
         height: 15px;
         width:15px;
-        padding-left:160px;
+        padding: 0px  0px  0px 110px;
     }
     .dots{
         height: 18px;
