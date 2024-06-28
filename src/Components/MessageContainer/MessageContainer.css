@@ -13,7 +13,7 @@ opacity: 0px;
   }
 .MessageBox{
     width: 400px;
-    height: 100vh;
+    height: 100dvh;
     flex-direction: column;
     
     background: #FAF9F4;
@@ -120,7 +120,7 @@ img{
     
     .MessageBox{
         width:100%;
-        height: 100vh;
+       
      
     }
 }
