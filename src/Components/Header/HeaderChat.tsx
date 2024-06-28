@@ -3,6 +3,7 @@ import trip from '../../assets/trip.jpg'
 import back1 from '../../assets/back.png'
 import edit from '../../assets/editing.png'
 import { useEffect, useState } from 'react'
+import dots from '../../assets/dots.png'
 
 interface Header {
   from: string;
@@ -59,7 +60,8 @@ const HeaderChat = () => {
           )}
         </div>
         <div className='TripName'>
-          <img src={trip} />
+         
+          <img src={trip} className='tripimage'/>
           <div className='Locations'>
             <div className='from'>
               <p>From</p>{TripHeader?.from}
@@ -68,6 +70,8 @@ const HeaderChat = () => {
               <p>To</p>{TripHeader?.to}
             </div>
           </div>
+          
+          <img src={dots} className='dots' />
         </div>
       </div>
     </div>

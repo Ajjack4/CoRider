@@ -3,7 +3,7 @@ import './MessageContainer.css'
 import send from '../../assets/send.png'
 import HeaderChat from '../Header/HeaderChat';
 import MessageFetch from '../FetchFromApi/MessageFetch'
-
+import clip from '../../assets/clip.png'
 
 const MessageContainer = () => {
 
@@ -20,15 +20,19 @@ const handleInputChange = (e) => {
         <MessageFetch/>
         <div className='MessageFooter'> 
          <div className='textInput'>
+          <div className="contain">
             <input
-            type="text"
+            
             value={input}
             onChange={handleInputChange}
             id="1"
             placeholder="Type a message..." 
             
             ></input>
+            <img src={clip} />
             <img src={send}/>
+            </div>
+            
           </div>
          
           

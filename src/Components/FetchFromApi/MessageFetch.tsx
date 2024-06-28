@@ -67,7 +67,7 @@ const Chat: React.FC = () => {
         {loading && <div className="loading">Loading...</div>}
         {chats.map((chat) => (
           <div key={chat.id} className={`chat-bubble ${chat.sender.self ? 'self' : ''}`}>
-            <img src={chat.sender.image} alt={chat.sender.user_id} className="chat-image" />
+            <img src={chat.sender.image} alt={chat.sender.user_id} key={chat.id} className={`chat-image ${chat.sender.self ? 'self' : ''}`} />
             <div className="chat-message-container">
               <p className="chat-message">{chat.message}</p>
             </div>
@@ -77,5 +77,6 @@ const Chat: React.FC = () => {
     </div>
   );
 };
+
 
 export default Chat;
