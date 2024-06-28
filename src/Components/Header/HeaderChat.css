@@ -171,6 +171,11 @@ opacity: 0px;
         width:15px;
         padding-left:160px;
     }
+    .dots{
+        height: 24px;
+        width: 24px;
+        padding-left: 32.5%;
+    }
     
 }
   

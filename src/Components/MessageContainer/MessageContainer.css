@@ -106,8 +106,11 @@ img{
 
 @media (max-width:410px){
     .MessageContainer{
-            width: 100%;
-            height: 100%;
+            width: 350px;
+            
+    }
+    .MessageBox{
+        width:350px ;
     }
 }
 
