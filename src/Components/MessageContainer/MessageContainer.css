@@ -1,10 +1,10 @@
 .MessageContainer {
-    max-width: 375px;
+    width: 375px;
 height: 100vh;
 top: -924px;
 left: -239px;
 gap: 0px;
-border-radius: 32px 0px 0px 0px;
+
 opacity: 0px;
 
     
@@ -17,7 +17,7 @@ opacity: 0px;
     
     background: #FAF9F4;
 
-    border-radius: 20px;
+    border-radius: 7px;
 }
 
 
@@ -104,13 +104,21 @@ img{
     
 }
 
-@media (max-width:410px){
+/* @media (max-width:410px){
     .MessageContainer{
             width: 350px;
             
     }
     .MessageBox{
-        width:350px ;
+        height: 100vh;
+    }
+} */
+
+@media (max-width:410px){
+   
+    .MessageBox{
+        width:100vw;
+        height: 100vh;
     }
 }
 
