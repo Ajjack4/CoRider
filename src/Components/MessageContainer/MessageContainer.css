@@ -1,5 +1,5 @@
 .MessageContainer {
-    width: 375px;
+    max-width: 375px;
 height: 100vh;
 top: -924px;
 left: -239px;
@@ -106,7 +106,8 @@ img{
 
 @media (max-width:410px){
     .MessageContainer{
-            width:100vh;
+            width: 100%;
+            height: 100%;
     }
 }
 

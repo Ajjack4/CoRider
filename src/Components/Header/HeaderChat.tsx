@@ -1,5 +1,5 @@
 import './HeaderChat.css'
-import trip from '../../assets/trip.jpg'
+import trip from '../../assets/title_image.jpg'
 import back1 from '../../assets/back.png'
 import edit from '../../assets/editing.png'
 import { useEffect, useState } from 'react'
@@ -42,7 +42,7 @@ const HeaderChat = () => {
     <div className='Header'>
       <div className="title">
         <div className='ChatName'>
-          <img src={back1} />
+          <img src={back1} className='back'/>
           {isEditing ? (
             <div className='editname'>
               <input 
@@ -60,15 +60,17 @@ const HeaderChat = () => {
           )}
         </div>
         <div className='TripName'>
-         
+        <div className="locationhead">
           <img src={trip} className='tripimage'/>
           <div className='Locations'>
+            
             <div className='from'>
-              <p>From</p>{TripHeader?.from}
+              <div className='from1'>From</div>{TripHeader?.from}
             </div>
             <div className='to'>
-              <p>To</p>{TripHeader?.to}
+              <div className='from1'>To</div>{TripHeader?.to}
             </div>
+          </div>
           </div>
           
           <img src={dots} className='dots' />

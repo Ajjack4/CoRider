@@ -9,7 +9,7 @@
     height: 20%;
     border-radius: 20px 20px 0px 0px;
     background-color:#FAF9F4;
-    
+   
     margin-bottom: 1px;
     
     border-bottom: 1px solid #E5E5E0
@@ -28,6 +28,14 @@
     height: Hug (30px)px;
     gap: 12px;
     opacity: 0px;
+
+}
+.back{
+    width: 24px;
+height: 24px;
+padding: 20px 10px 0px 13px;
+gap: 0px;
+opacity: 0px;
 
 }
 .ChatName img{
@@ -59,13 +67,14 @@
 .TripName{
     display: flex;
     flex-direction:row;
-   
-
-    opacity: 0px; 
     width: Fixed (343px)px;
 height: Hug (48px)px;
 gap: 12px;
 opacity: 0px;
+
+   
+
+
 
 
 }
@@ -100,6 +109,14 @@ opacity: 0px;
     
     
 }
+.locationhead{
+    display: flex;
+    width: Fill (307px)px;
+height: Hug (48px)px;
+gap: 16px;
+opacity: 0px;
+
+}
 .Locations .from{
     display:flex;
     flex-direction: row;
@@ -121,9 +138,9 @@ opacity: 0px;
     font-weight: 700;
     padding: 0px 0px 0px 0px;
 }
-.Locations .to p{
+.from1{
     margin: 0;
-    font-weight: 450;
+    font-weight: 400;
     padding-right: 10px;
 }
 .editname{
