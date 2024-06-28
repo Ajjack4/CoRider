@@ -1,6 +1,6 @@
 .MessageContainer {
     width: 375px;
-height: 100vh;
+height: 100dvh;
 top: -924px;
 left: -239px;
 gap: 0px;
@@ -13,7 +13,7 @@ opacity: 0px;
   }
 .MessageBox{
     width: 400px;
-    height: 100dvh;
+    height: 100%;
     flex-direction: column;
     
     background: #FAF9F4;
@@ -37,7 +37,7 @@ opacity: 0px;
     display: block;
   
     width: 100%;
-    height: 18vh;
+    height: 18%;
     top: 696px;
    
     gap: 0px;
