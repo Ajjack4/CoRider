@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './MessageFetch.css';
+import bluetick from '../../assets/correct.png';
 
 interface Sender {
   image: string;
@@ -39,7 +40,6 @@ const Chat: React.FC = () => {
         setLoading(false);
 
         if (pageNumber === 0 && scrollableRef.current) {
-         
           scrollableRef.current.scrollTop =0;
         }
       })
@@ -50,13 +50,9 @@ const Chat: React.FC = () => {
   };
 
   const handleScroll = () => {
-    
     if (scrollableRef.current && hasMore && !loading) {
-      // console.log(scrollableRef.current.scrollHeight)
-      // console.log(scrollableRef.current.scrollTop)
-      if (scrollableRef.current.scrollTop+scrollableRef.current.scrollHeight<=1000) {
+      if (scrollableRef.current.scrollTop + scrollableRef.current.scrollHeight <= 1000) {
         setPage((prevPage) => prevPage + 1);
-        // console.log("Updated page ")
       }
     }
   };
@@ -67,7 +63,12 @@ const Chat: React.FC = () => {
         {loading && <div className="loading">Loading...</div>}
         {chats.map((chat) => (
           <div key={chat.id} className={`chat-bubble ${chat.sender.self ? 'self' : ''}`}>
-            <img src={chat.sender.image} alt={chat.sender.user_id} key={chat.id} className={`chat-image ${chat.sender.self ? 'self' : ''}`} />
+            <div className="chat-image-container">
+              <img src={chat.sender.image} alt={chat.sender.user_id} className={`chat-image ${chat.sender.self ? 'self' : ''}`} />
+              {chat.sender.is_kyc_verified && (
+                <img src={bluetick} alt="Verified" className={`blue-tick ${chat.sender.self ? 'self' : ''}`} />
+              )}
+            </div>
             <div className="chat-message-container">
               <p className="chat-message">{chat.message}</p>
             </div>
@@ -77,6 +78,5 @@ const Chat: React.FC = () => {
     </div>
   );
 };
-
 
 export default Chat;
